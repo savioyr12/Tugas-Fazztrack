@@ -1,0 +1,152 @@
+/* Styling Tambahan atas */
+.child {
+    flex: 1;
+    margin: 2px;
+    padding: 10px;
+  }
+  
+  .one {
+    flex: 17;
+  }
+  
+  .four {
+    flex: 2.5;
+  }
+  
+  /* Styling Tambahan Bawah */
+  .title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  
+  .judul {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .satu {
+    flex: 4;
+  }
+  
+  .dua {
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  /* Sort */
+  .sort {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sub {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pertama {
+    flex: 5;
+  }
+  
+  .kedua {
+    padding: 10px;
+    margin-left: 5px;
+  }
+  
+  /* List */
+  .isi {
+    flex: 1;
+    margin: 2px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .cild {
+    flex: 1;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+  }
+  
+  .du {
+    display: flex;
+    flex: 18;
+  }
+  
+  /* footer */
+  .footer {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    position: absolute;
+    bottom: 10px;
+  }
+/* mobile small */
+  @media screen and (max-width : 425px) {
+    .atas {
+      height: 1%;
+      padding-top: 1%;
+    }
+    .bawah {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+  
+  }
+/* Isian List */
+#list {
+  margin: 2px;
+  padding: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(243, 243, 243);
+  position: relative;
+}
+.isian {
+  flex: 1;
+  margin: 2px;
+  padding: 0px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  cursor: pointer;
+  }
+.subtask {
+  flex: 1;
+  margin: 2px;
+  padding: 10px;
+  display:flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.middle {
+  flex: 1;
+  padding-left: 10px;
+}
+/* mobile medium */
+  
+  @media screen and (max-width : 768px) {
+
+  } 
+/* tablet */
+  @media screen and (max-width : 1024px) {
+
+  }
+/* laptop */
+  @media screen and (max-width : 1044px) {
+
+  }

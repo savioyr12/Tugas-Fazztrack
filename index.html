@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Tugas Html Css 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--ini Styling-->
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(240, 240, 240);
+      }
+      header {
+        height: 10%;
+        padding-top: 30px;
+        width: 100%;
+      }
+      /*Styling Atas*/
+      .atas {
+        height: 10%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+      }
+
+      /* Styling Bawah */
+      .bawah {
+        display: flex;
+        height: 70%;
+        padding: 20px;
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-bottom: 20%;
+      }
+      .childish {
+        flex: 1;
+      }
+      /* Ini bagian kotak list */
+      .tengah {
+        box-sizing: border-box;
+        position: relative;
+        background-color: white;
+        padding: 30px;
+        width: 800px;
+        flex: 3;
+        border-radius: 32px;
+        height: 130%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Bagian Atas -->
+    <header>
+      <div class="atas">
+        <div class="child one"><img src="./Asset/Logo.svg" alt="Logo" /></div>
+        <div class="child">
+          <img src="./Asset/Notification.svg" alt="Notification" />
+        </div>
+        <div class="child">
+          <img src="./Asset/Ellipse 34.png" alt="Foto" />
+        </div>
+        <div class="child four">
+          <h2 id="nama">Gilang Rizaltin</h2>
+        </div>
+        <div class="child">
+          <img src="./Asset/Arrow - Down 2.svg" alt="logo" />
+        </div>
+      </div>
+    </header>
+    <!-- Bagian Bawah -->
+    <div class="bawah">
+      <div class="childish tengah">
+        <!-- My Task -->
+        <div class="title">
+          <div class="judul satu">
+            <h1 style="color: rgb(253, 132, 19)">My Task</h1>
+            <h1>To Do List</h1>
+            <p style="color: grey; font-family: sans-serif">
+              Buat list tugas harian saya
+            </p>
+          </div>
+          <div class="judul dua">
+            <img src="./Asset/CTA (1).png" alt="tambah" />
+          </div>
+        </div>
+        <!-- Sort Menu -->
+        <div class="sort">
+          <div class="sub pertama">
+            <h2>Sort By</h2>
+          </div>
+          <div class="sub kedua">
+            <img src="./Asset/Dropdown.png" alt="Tanggal" />
+          </div>
+        </div>
+        <section>
+          <button type="button">Toggle</button>
+        </section>
+        <!-- Daftar Menu -->
+        <!-- 1 -->
+        <div class="isi satu">
+          <div class="cild">
+            <img
+              class="tombol"
+              src="./Asset/Rectangle 21.png"
+              alt="Button Image"
+            />
+          </div>
+          <div class="cild du">
+            <div>
+              <h3>Product Design</h3>
+              <p>Tugas untuk design team</p>
+            </div>
+            <div>
+              <img src="./Asset/Frame 47.png" alt="deadline" />
+            </div>
+          </div>
+          <div class="cild tri">
+            <img src="./Asset/Arrow - Down 2.svg" alt="Arrow" />
+          </div>
+        </div>
+        <!-- untuk isian -->
+        <div id="list" style="display: none">
+          <!-- bag atas -->
+          <div id="subtask">
+            <div class="sub first">
+              <h5>Subtask</h5>
+            </div>
+            <div class="sub second">
+              <img src="./asset/Frame 55.png" alt="tambah" />
+            </div>
+          </div>
+          <!-- bag bawah -->
+          <!-- isian 1 -->
+          <div class="isian">
+            <div class="left">
+              <img
+                class="tombol"
+                src="./Asset/Rectangle 21.png"
+                alt="Button Image"
+              />
+            </div>
+            <div class="middle">
+              <div>
+                <h5>Design Review</h5>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./Asset/trash.png" alt="Arrow" />
+            </div>
+          </div>
+          <!-- isian 2 -->
+          <div class="isian">
+            <div class="left">
+              <img
+                class="tombol"
+                src="./Asset/Rectangle 21.png"
+                alt="Button Image"
+              />
+            </div>
+            <div class="middle">
+              <div>
+                <h5>Low-Fidelity Design</h5>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./Asset/trash.png" alt="Arrow" />
+            </div>
+          </div>
+          <!-- isian 3 -->
+          <div class="isian">
+            <div class="left">
+              <img
+                class="tombol"
+                src="./Asset/Rectangle 21.png"
+                alt="Button Image"
+              />
+            </div>
+            <div class="middle">
+              <div>
+                <h5>High-Fidelty Design</h5>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./Asset/trash.png" alt="Arrow" />
+            </div>
+          </div>
+          <!-- isian 4 -->
+          <div class="isian">
+            <div class="left">
+              <img
+                class="tombol"
+                src="./Asset/Rectangle 21.png"
+                alt="Button Image"
+              />
+            </div>
+            <div class="middle">
+              <div>
+                <h5>Design Guidlines</h5>
+              </div>
+            </div>
+            <div class="right">
+              <img src="./Asset/trash.png" alt="Arrow" />
+            </div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="isi">
+          <div class="cild">
+            <img src="./Asset/Rectangle 21.png" alt="option" />
+          </div>
+          <div class="cild du">
+            <div>
+              <h3>Development</h3>
+            </div>
+            <div>
+              <img src="./Asset/Frame 47 (1).png" alt="deadline" />
+            </div>
+          </div>
+          <div class="cild">
+            <img src="./Asset/Arrow - Down 2.svg" alt="Arrow" />
+          </div>
+        </div>
+        <div class="isi">
+          <!-- 3 -->
+          <div class="cild">
+            <img src="./Asset/Rectangle 21.png" alt="option" />
+          </div>
+          <div class="cild du">
+            <div>
+              <h3>Launching Waswez Website</h3>
+            </div>
+            <div>
+              <img src="./Asset/Frame 47 (2).png" alt="deadline" />
+            </div>
+          </div>
+          <div class="cild">
+            <img src="./Asset/Arrow - Down 2.svg" alt="Arrow" />
+          </div>
+        </div>
+        <br />
+        <br />
+        <!-- footer -->
+        <div class="footer">
+          <div style="width: 50px">
+            <img src="./Asset/Arrow - Right 2.png" alt="Right" />
+          </div>
+          <div>
+            <p style="font-size: larger">Tugas Terselesaikan</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
